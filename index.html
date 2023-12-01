@@ -1,166 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Engineer Portfolio</title>
-<style>
-    body {
+    <title>My Portfolio</title>
+    <style>
+        body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-header {
-    background-color:navy;
-    color: #fff;
+    
+h2{
     text-align: center;
-    padding: 2em;
+    color:navy;
+    background-color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+header {
+    background-color: #333;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 2rem;
 }
 
 section {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: darkolivegreen;
-
+    padding: 2rem;
 }
 
-h1, h2 {
-    color:peachpuff;
-}
-
-ul {
-    list-style: none;
+ol {
+    list-style-type: none;
     padding: 0;
 }
-.nu{
-    background-color: rgb(100, 98, 98);
 
-}
 li {
-    margin-bottom: 1em;
+    margin-bottom: 0.5rem;
+}
+.na{
+    text-align: left;
+    color:navy;
+}
+.eu{
+    color:peachpuff;
+    background-color: rgb(13, 69, 60);
 }
 img{
-    height:200px;
-    width:200px;
-    border:solid;
-    border-color:black;
+ filter:grayscale(70%) invert(60%);
+ border:4px solid black;
+    height:250px;
+    width:300px;
+}
 
-}
-#num{
-    height:400px;
-    width:400px;
-}
-.skills {
-    background-color: #eee;
-    padding: 1em;
-}
 footer {
-    background-color: rgb(56, 49, 49);
-    color: darkred;
+    background-color: #250808;
+    color: #dcbcbc;
     text-align: center;
-
+    padding: 0.4rem;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-
-.mam{
-     color:darkkhaki;
-
+     
+.mam:hover{
+ color:cyan;
 }
-#da:hover::after{
- color:rgb(196, 255, 229);
- content:"[Finland]";
-  font-style: italic;
+        .mam:active::after{
+             content:"Biology";
+        color:pink;
+        }
+.bun:hover{
+    color: seagreen;
+}
+        .bun:active::after{
+            content:"Physics";
+        color:orange;
+        }
+.caption{
+    border:3px solid black;
+    padding:10px;
+    margin:10px;
+    width:50%;
+    float:right;
 }
 
-</style>
+
+.image{
+    float:left;
+}
+.abc{
+float:right;}
+	    .dav{
+		    border:2px solid black;
+    padding:10px;
+    margin:10px;
+    width:50%;
+    float:left;
+	    }  
+.gallery-item{
+    border:2px dashed black;
+    width:80%;
+    margin:25px;
+    padding:10px;
+    overflow:hidden;
+}
+	    .filt{
+		    filter:blur(5px);
+		    brightness:70%;
+	    }
+
+img.interactive-image {
+    height: 300px;
+	width:300px;
+    transition: height 3s, filter 2s;
+	float:left;
+	cursor:pointer;
+}
+
+img.interactive-image:active {
+    height: 400px;
+	width:500px;
+    filter: hue-rotate(225deg);
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+}
+
+div.rectangle {
+    width: 305px;
+    height: 150px;
+    background-color: DarkBlue;
+    color: peachpuff;
+    transition: background-color 2s, width 3s, color 0.5s;
+	float:right;
+}
+
+div.rectangle:active {
+    background-color:#616247;
+    color: beige;
+    width: 400px;
+}
+#tup{
+	background-color:#DFCFBE;
+}
+	    #mat{
+		    background-color:#34568B;
+	    }
+
+
+#logo{
+	background-color:#616247;
+}
+
+
+
+    </style>
 </head>
 <body>
-  <img id="num" src="https://www.hw.ac.uk/programmes/img/Subjects/Chemical-Engineering/chemical-engineering-female-lab-technici.jpg" align="right">
-<div class="nu">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>Chemical Engineering-A futuristic job</h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
-    <br><header>
+    <header>
         <h1>Tihon Adela</h1>
-        <p>Engineer | Web Developer</p>
+        <p>Web Developer | Designer</p>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>Since i was a kid,i remember wanting to help humanity,but I knew that medicine was not for me That's why I thought that I would be able to develop and create products or even medicines that would be essential and necessary for some people with certain health conditions.I grew up in a small european country,and studied at <span class="mam"> 2 prestigious universities in Finland</span></p>
+   
+    <section >
+        <h2>About me</h2>
+       <div class="na">
+        <p>I study at the Orizont Lyceum in the 10 th grade.Since i was litle,i was passionate about computers,and engineering in general,especially because my dad is a software engineer.Till today i think that i have a vast knowledge about many things in general,math chemistry and informations in particular.That s why,i hope that in the future,i'll be able to become what i want: a Mechanical or Chemical engineer.</p>
+       </div>
     </section>
-    <section class="skills">
-        <h2>Language programming Skills</h2>
+     <section>
+         <h2>Education</h2>
+    <div class="na">
         <ul>
-            <li><Html/CSS</li>
-            <li>Excel/Pascal/Python</li>
+            <li>1-4 Year i studied at Ginta latina Lyceum-In ciocana</li>
+            <li>5-9 Year at Gheorghe Asachi Lyceum</li>
+            <li>Year 10 at Orizont Lyceum in Durlesti</li>
         </ul>
-        <h2>General knowledge known</h2>
+    </div>
+     </section>
+    <section class="eu">
+        <h2>Skills</h2>
+        <h1>Language programming skills</h1>
         <ul>
-          <li>Maths knowledge</li>
-          <li>Knowledge of chemistry including the safe use and disposal of chemicals</li>
-          <li>Science/Physics and analitical thinking skills</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Excel</li>
+            <li>Pascal</li>
+            <li>Python</li>
         </ul>
-    </section>
-
-    <section>
-
-<img src="https://farm2.staticflickr.com/1913/45054588884_3d2c84e880_o_d.jpg" align="left">
-
-      <h2>Projects</h2>
+        <h1>General Knowledge</h1>
         <ul>
-          <li>Synthesis and Application of Metal and Semiconductor Nanoparticles</li>
-          <li>Mechanistic Inorganic Chemistry</li>
-          <li>Synthesis and Study of DNA Damages</li>
-          <li>Enzyme-assembled Nanocapsules for Targeted Drug Delivery</li>
+            <li>Science/Biology and analitical thinking skills</li>
+            <li>Math and Physics knowledge</li>
+            <li>Knowledge of safe use and safe disposal of chemicals</li>
         </ul>
     </section>
-    <section class="slide">
-      <div id="da">
-        <h2>Education</h2>
-      <p>Ph.D. in Chemical Engineering, Aalto University,2020</p>
-      <p>Bachelor of Science in Chemical Engineering, Oulu University,2022</p>
-      </div>
+
+    <section class="nu">
+        <h2>Projects</h2>
+        <div class="mam">
+            <h3>Meyosis and Mytosis</h3>
+            <p>My mom and me,we cut some polystirene balls,into halves and shaped them properly,to resemble a cell.With different colored papers/cardboard and play dough we tried to reproduce those processes,of mytosis and meyosis,depending on the animal or thingg which it coresponds to.And then we glued these halves on a big piece of cardboard,and i took it to my biology teacher.</p>
+        </div>
+        <div class="bun">
+            <h3>Kangoorou game</h3>
+            <p>When i was in the 9 th grade,we had a kind of test,or competition: whoever makes the most interesting game og this app,wins a meal at MCDonalds,and the winner,can invite 2 friends with him.I really wanted to be the first that finishes it,and the first that has a completely different perspective of the game,than others.Because i studied,i was able to do it easily.And I won.</p>
+        </div>
+      <h2>Code samples(examples of simple codes we learnt and their short explanation)</h2>
     </section>
-
-
-
-    <section class="slide">
-      <h2>Professional Experience</h2>
-      <h3>Senior Chemical Engineer at [Company], [Year] - Present</h3>
-      <p>Lead projects in [specific area], resulting in [quantifiable achievements]. Collaborated with cross-functional teams to ensure successful project implementation.</p>
-      <h3>Chemical Engineer at [Previous Company], [Year] - [Year]</h3>
-      <p>Contributed to [description of responsibilities and achievements]. Implemented process improvements resulting in [measurable outcomes].</p>
-    </section>
-
-    <section class="slide">
-      <h2>Research Publications</h2>
-      <p>[Title of Paper], [Journal Name], [Year]</p>
-      <p>[Title of Paper], [Journal Name], [Year]</p>
-    </section>
-
+     <div class="gallery-item" id="tup">
+    		    <div class="image" >
+    		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pond_Colors_%285106814180%29.jpg/450px-Pond_Colors_%285106814180%29.jpg">
+    		    </div>
+    		    <div class="caption" >
+    		        This image has a black solid border,and a grayscale(70%)/invert(60%) filter.
+    		    </div>
+            </div>
+	    <div class="gallery-item" id="mat">
+                  <div class="abc">
+    		        <img  class="filt" src="https://www.thoughtco.com/thmb/QIHGvOYobApZ_sY6xRjIkBdhcqg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/521928855-56a9e2925f9b58b7d0ffac0a.jpg">
+    		    </div>
+    		    <div class="dav" >
+    		        This image has a blur of 5px and brightness of 70%.
+		    </div>
+	     </div>
+     <br><br>   
+	<br>
+		    <div class="gallery-item" id="logo">
+               <img class="interactive-image" src="https://i.pinimg.com/474x/32/f5/50/32f55011dc2a3e0ba3331a0706ef793a.jpg">
+        <div class="rectangle">This is a clouds image with the hue-rotate(225deg) filter,and near,a rectangle text box.Both when being hovered over,change their properties.</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
     <footer>
-      <p>Contact: adela.tihon@orizont.com | LinkedIn: linkedin.com/in/adelatihon</p>
-  </footer>
+        <p>Contact: adela.tihon@orizont.com</p>
+	<p>Connect with me on LinkedIn:adelatihon/LinkedIn.com</p>
+    </footer>
+	<br>
+	<br>
 </body>
 </html>
 
