@@ -45,13 +45,19 @@ li {
 .eu{
     color:peachpuff;
     background-color: rgb(13, 69, 60);
+	  padding: 1rem;
+            border-radius: 8px;
 }
 img{
  filter:grayscale(70%) invert(60%);
  border:4px solid black;
     height:250px;
     width:300px;
-}
+transition: filter 0.5s;
+        }
+  img:hover {
+        filter: grayscale(50%) invert(40%);
+        }
 
 footer {
     background-color: #250808;
@@ -92,7 +98,7 @@ footer {
 .abc{
 float:right;}
 	    .dav{
-		    border:2px solid black;
+border:2px solid black;
     padding:10px;
     margin:10px;
     width:50%;
@@ -104,10 +110,14 @@ float:right;}
     margin:25px;
     padding:10px;
     overflow:hidden;
+transition: transform 1s;
 }
-	    .filt{
-		    filter:blur(5px);
-		    brightness:70%;
+.gallery-item:hover {
+transform: scale(1.05);
+        }
+ .filt{
+	filter:blur(5px);
+	brightness:70%;
 	    }
 
 img.interactive-image {
@@ -136,6 +146,8 @@ div.rectangle {
     color: peachpuff;
     transition: background-color 2s, width 3s, color 0.5s;
 	float:right;
+transition: background-color 0.5s, width 0.5s, color 0.5s;
+
 }
 
 div.rectangle:active {
@@ -146,11 +158,9 @@ div.rectangle:active {
 #tup{
 	background-color:#DFCFBE;
 }
-	    #mat{
-		    background-color:#34568B;
+ #mat{
+ background-color:#34568B;
 	    }
-
-
 #logo{
 	background-color:#616247;
 }
