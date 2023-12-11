@@ -104,17 +104,25 @@ border:2px solid black;
     width:50%;
     float:left;
 	    }  
-.gallery-item{
-    border:2px dashed black;
-    width:80%;
-    margin:25px;
-    padding:10px;
-    overflow:hidden;
-transition: transform 1s;
-align-items:center;
-}
-.gallery-item:hover {
-transform: scale(1.05);
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-item {
+            border: 2px dashed black;
+            width: 80%;
+            margin: 25px;
+            padding: 10px;
+            overflow: hidden;
+            transition: transform 1s;
+            align-items: center;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
         }
  .filt{
 	filter:blur(5px);
@@ -221,6 +229,7 @@ div.rectangle:active {
         </div>
       <h2>Code samples(examples of simple codes we learnt and their short explanation)</h2>
     </section>
+	<div class="gallery">
      <div class="gallery-item" id="tup">
     		    <div class="image" >
     		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pond_Colors_%285106814180%29.jpg/450px-Pond_Colors_%285106814180%29.jpg">
@@ -243,6 +252,7 @@ div.rectangle:active {
                <img class="interactive-image" src="https://i.pinimg.com/474x/32/f5/50/32f55011dc2a3e0ba3331a0706ef793a.jpg">
         <div class="rectangle">This is a clouds image with the hue-rotate(225deg) filter,and near,a rectangle text box.Both when being clicked on,change their properties.</div>
     </div>
+	</div>
     <br>
     <br>
     <br>
